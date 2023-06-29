@@ -32,19 +32,21 @@
           <div class="card">
             <div>
               <div class="card-header">
-                <p scope="row">{{ note.id + " " + note.title }}</p>
+                <h2 scope="row">{{ note.id + " " + note.title }}</h2>
               </div>
               <div class="card-body">
-                <h5>Content</h5>
+                <h5><strong>Content</strong></h5>
                 <p>{{ note.content }}</p>
-                <h5>Created By</h5>
+                <hr>
+                <h5><strong>Created By</strong></h5>
                 <p>{{ note.created_by }}</p>
-                <h5>Email</h5>
+                <hr>
+                <h5><strong>Email</strong></h5>
                 <p>{{ note.email }}</p>
-                <h5>Created at</h5>
+                <hr>
+                <h5><strong>Created at</strong></h5>
                 <p>{{ note.created_at }}</p>
-                <h5>Updated at</h5>
-                <p>{{ note.updated_at }}</p>
+                <hr>
               </div>
               <div class="card-footer">
                 <button @click="deleteNote(note.id)" class="btn btn-danger">
