@@ -6,6 +6,11 @@ import Create from "./components/CreateComponent.vue";
 
 const routes = [
     {
+        path: "/",
+        name: "notes",
+        component: Home,
+    },
+    {
         path: "/notes",
         name: "notes",
         component: Index,
