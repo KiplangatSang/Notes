@@ -7,8 +7,8 @@ import Create from "./components/CreateComponent.vue";
 const routes = [
     {
         path: "/",
-        name: "notes",
-        component: Home,
+        name: "home",
+        component: Index,
     },
     {
         path: "/notes",
